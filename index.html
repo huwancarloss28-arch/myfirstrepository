@@ -1,10 +1,10 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>FIELD RESPONSE | Military Humanitarian Journal</title>
+    <title>FIELD RESPONSE | Disaster & Humanitarian Journal</title>
 
     <style>
         * {
@@ -15,15 +15,15 @@
         }
 
         :root {
-            --navy: #071923;
-            --navy-light: #0d2938;
-            --olive: #68784d;
-            --olive-dark: #4c5c39;
-            --gold: #d6ad42;
-            --blue: #1b91c5;
-            --white: #f5f7f8;
-            --gray: #aebbc1;
-            --card: #102f40;
+            --navy: #071a24;
+            --navy2: #0c2938;
+            --olive: #68794d;
+            --olive-dark: #4d6038;
+            --gold: #d7b04b;
+            --white: #f5f7f7;
+            --gray: #aebbc0;
+            --card: #102f3e;
+            --blue: #2c9dca;
         }
 
         body {
@@ -39,8 +39,8 @@
         }
 
         img {
-            width: 100%;
             display: block;
+            width: 100%;
         }
 
         .container {
@@ -52,9 +52,9 @@
             padding: 90px 0;
         }
 
-        /* =========================
+        /* ==============================
            NAVIGATION
-        ========================= */
+        ============================== */
 
         header {
             position: fixed;
@@ -63,14 +63,14 @@
             width: 100%;
             z-index: 1000;
 
-            background: rgba(7, 25, 35, .94);
+            background: rgba(7, 26, 36, .95);
             backdrop-filter: blur(12px);
 
             border-bottom: 1px solid rgba(255,255,255,.08);
         }
 
         nav {
-            min-height: 76px;
+            height: 76px;
 
             display: flex;
             justify-content: space-between;
@@ -80,7 +80,7 @@
         .logo {
             display: flex;
             align-items: center;
-            gap: 12px;
+            gap: 10px;
 
             font-size: 19px;
             font-weight: 800;
@@ -105,9 +105,9 @@
         }
 
         .nav-links {
-            list-style: none;
             display: flex;
-            gap: 27px;
+            list-style: none;
+            gap: 26px;
         }
 
         .nav-links a {
@@ -122,18 +122,16 @@
 
         .menu {
             display: none;
-
             border: none;
             background: none;
             color: white;
-
             font-size: 28px;
             cursor: pointer;
         }
 
-        /* =========================
+        /* ==============================
            HERO
-        ========================= */
+        ============================== */
 
         .hero {
             min-height: 100vh;
@@ -144,9 +142,9 @@
             background:
                 linear-gradient(
                     90deg,
-                    rgba(7,25,35,.97),
-                    rgba(7,25,35,.76),
-                    rgba(7,25,35,.35)
+                    rgba(4,18,27,.96),
+                    rgba(4,18,27,.72),
+                    rgba(4,18,27,.25)
                 ),
                 url("images/hero.jpg")
                 center/cover no-repeat;
@@ -160,25 +158,24 @@
         .badge {
             display: inline-block;
 
-            border: 1px solid var(--gold);
-
-            color: var(--gold);
-
             padding: 7px 15px;
 
+            border: 1px solid var(--gold);
             border-radius: 30px;
+
+            color: var(--gold);
 
             font-size: 11px;
             letter-spacing: 2px;
             text-transform: uppercase;
 
-            margin-bottom: 22px;
+            margin-bottom: 20px;
         }
 
         .hero h1 {
-            font-size: clamp(43px, 7vw, 76px);
-            line-height: 1.02;
-            margin-bottom: 25px;
+            font-size: clamp(42px, 7vw, 75px);
+            line-height: 1.03;
+            margin-bottom: 24px;
         }
 
         .hero h1 span {
@@ -186,19 +183,18 @@
         }
 
         .hero p {
-            max-width: 690px;
+            max-width: 680px;
 
-            color: #d1dce0;
-
+            color: #d4dfe3;
             font-size: 18px;
 
-            margin-bottom: 32px;
+            margin-bottom: 30px;
         }
 
         .buttons {
             display: flex;
-            gap: 13px;
             flex-wrap: wrap;
+            gap: 12px;
         }
 
         .btn {
@@ -210,8 +206,12 @@
 
             border-radius: 6px;
 
+            border: none;
+
             font-weight: 700;
             font-size: 14px;
+
+            cursor: pointer;
 
             transition: .3s;
         }
@@ -236,21 +236,21 @@
             color: var(--navy);
         }
 
-        /* =========================
-           STATS
-        ========================= */
+        /* ==============================
+           STATISTICS
+        ============================== */
 
         .stats {
-            background: var(--navy-light);
+            background: var(--navy2);
             border-top: 1px solid rgba(255,255,255,.06);
             border-bottom: 1px solid rgba(255,255,255,.06);
         }
 
         .stats-grid {
             display: grid;
-            grid-template-columns: repeat(4,1fr);
+            grid-template-columns: repeat(4, 1fr);
+            padding: 30px 0;
             gap: 20px;
-            padding: 28px 0;
         }
 
         .stat {
@@ -267,9 +267,9 @@
             font-size: 13px;
         }
 
-        /* =========================
+        /* ==============================
            SECTION TITLE
-        ========================= */
+        ============================== */
 
         .section-title {
             text-align: center;
@@ -283,19 +283,19 @@
         }
 
         .section-title h2 {
-            font-size: clamp(30px,5vw,45px);
+            font-size: clamp(30px, 5vw, 44px);
             margin: 8px 0;
         }
 
         .section-title p {
-            max-width: 680px;
+            max-width: 700px;
             margin: auto;
             color: var(--gray);
         }
 
-        /* =========================
+        /* ==============================
            ABOUT
-        ========================= */
+        ============================== */
 
         .about-grid {
             display: grid;
@@ -304,14 +304,14 @@
             align-items: center;
         }
 
-        .about-photo {
-            height: 480px;
+        .about-image {
+            min-height: 470px;
 
             border-radius: 14px;
 
             background:
                 linear-gradient(
-                    rgba(0,0,0,.08),
+                    rgba(0,0,0,.05),
                     rgba(0,0,0,.35)
                 ),
                 url("images/about.jpg")
@@ -321,185 +321,51 @@
         .about-content h2 {
             font-size: 42px;
             line-height: 1.15;
-            margin: 12px 0 20px;
+            margin-bottom: 20px;
         }
 
         .about-content p {
             color: var(--gray);
-            margin-bottom: 16px;
+            margin-bottom: 17px;
         }
 
-        .list {
+        .check-list {
             list-style: none;
             margin-top: 25px;
         }
 
-        .list li {
+        .check-list li {
             margin: 12px 0;
         }
 
-        .list strong {
+        .check-list span {
             color: var(--gold);
+            font-weight: bold;
             margin-right: 8px;
         }
 
-        /* =========================
-           ARTICLES
-        ========================= */
+        /* ==============================
+           ACTIVITIES
+        ============================== */
 
-        .dark-section {
+        .dark {
             background: #091f2c;
         }
 
-        .articles {
-            display: grid;
-            grid-template-columns: repeat(3,1fr);
-            gap: 24px;
-        }
-
-        .article {
-            background: var(--card);
-
-            border-radius: 12px;
-            overflow: hidden;
-
-            border: 1px solid rgba(255,255,255,.06);
-
-            transition: .3s;
-        }
-
-        .article:hover {
-            transform: translateY(-7px);
-            border-color: var(--blue);
-        }
-
-        .article img {
-            height: 215px;
-            object-fit: cover;
-        }
-
-        .article-body {
-            padding: 22px;
-        }
-
-        .category {
-            color: var(--gold);
-            font-size: 11px;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-        }
-
-        .article h3 {
-            margin: 8px 0;
-            font-size: 20px;
-        }
-
-        .article p {
-            color: var(--gray);
-            font-size: 14px;
-        }
-
-        .read {
-            display: inline-block;
-            margin-top: 18px;
-            color: var(--blue);
-            font-weight: bold;
-            font-size: 13px;
-        }
-
-        /* =========================
-           EBOOKS
-        ========================= */
-
-        .ebook-tools {
-            display: flex;
-            gap: 12px;
-            margin-bottom: 30px;
-        }
-
-        .ebook-tools input {
-            flex: 1;
-
-            padding: 14px;
-
-            background: var(--navy);
-
-            color: white;
-
-            border: 1px solid rgba(255,255,255,.12);
-            border-radius: 6px;
-
-            outline: none;
-        }
-
-        .ebooks {
-            display: grid;
-            grid-template-columns: repeat(3,1fr);
-            gap: 24px;
-        }
-
-        .book {
-            background: var(--card);
-            border-radius: 12px;
-            overflow: hidden;
-
-            border: 1px solid rgba(255,255,255,.06);
-        }
-
-        .book-cover {
-            height: 270px;
-            object-fit: cover;
-        }
-
-        .book-content {
-            padding: 22px;
-        }
-
-        .book-content h3 {
-            margin: 8px 0;
-        }
-
-        .book-content p {
-            color: var(--gray);
-            font-size: 14px;
-            margin-bottom: 18px;
-        }
-
-        .book-buttons {
-            display: flex;
-            gap: 9px;
-        }
-
-        .book-btn {
-            padding: 9px 13px;
-            border-radius: 5px;
-            border: 1px solid rgba(255,255,255,.15);
-            font-size: 12px;
-        }
-
-        .download {
-            background: var(--olive);
-            border: none;
-        }
-
-        /* =========================
-           ACTIVITIES
-        ========================= */
-
         .activity-grid {
             display: grid;
-            grid-template-columns: repeat(4,1fr);
-            gap: 18px;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
         }
 
         .activity {
+            background: var(--card);
+
             padding: 28px 20px;
 
-            background: rgba(255,255,255,.035);
+            border-radius: 10px;
 
             border: 1px solid rgba(255,255,255,.07);
-
-            border-radius: 10px;
 
             text-align: center;
 
@@ -507,18 +373,17 @@
         }
 
         .activity:hover {
+            transform: translateY(-6px);
             border-color: var(--gold);
-            transform: translateY(-5px);
         }
 
         .activity-icon {
-            font-size: 34px;
+            font-size: 35px;
             margin-bottom: 10px;
         }
 
         .activity h3 {
-            font-size: 17px;
-            margin-bottom: 7px;
+            margin-bottom: 8px;
         }
 
         .activity p {
@@ -526,71 +391,212 @@
             font-size: 13px;
         }
 
-        /* =========================
+        /* ==============================
            GALLERY
-        ========================= */
+        ============================== */
+
+        .gallery-controls {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 15px;
+
+            margin-bottom: 25px;
+        }
+
+        .gallery-search {
+            width: 100%;
+            max-width: 350px;
+
+            padding: 13px 15px;
+
+            background: var(--navy2);
+            color: white;
+
+            border: 1px solid rgba(255,255,255,.12);
+
+            border-radius: 6px;
+
+            outline: none;
+        }
+
+        .upload-label {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+
+            padding: 13px 20px;
+
+            background: var(--olive);
+            color: white;
+
+            border-radius: 6px;
+
+            font-size: 14px;
+            font-weight: bold;
+
+            cursor: pointer;
+
+            transition: .3s;
+        }
+
+        .upload-label:hover {
+            background: var(--gold);
+            color: var(--navy);
+        }
+
+        #photoUpload {
+            display: none;
+        }
 
         .gallery {
             display: grid;
 
-            grid-template-columns: 2fr 1fr 1fr;
+            grid-template-columns: repeat(3, 1fr);
 
-            grid-auto-rows: 220px;
-
-            gap: 12px;
+            gap: 16px;
         }
 
-        .gallery-item {
+        .photo-card {
             position: relative;
+
+            height: 260px;
+
             overflow: hidden;
-            border-radius: 9px;
+
+            border-radius: 10px;
+
+            background: var(--card);
+
+            border: 1px solid rgba(255,255,255,.06);
+
+            cursor: pointer;
         }
 
-        .gallery-item:first-child {
-            grid-row: span 2;
-        }
-
-        .gallery-item img {
+        .photo-card img {
             height: 100%;
             object-fit: cover;
+
             transition: .5s;
         }
 
-        .gallery-item:hover img {
+        .photo-card:hover img {
             transform: scale(1.08);
         }
 
-        .caption {
+        .photo-overlay {
             position: absolute;
 
-            bottom: 12px;
-            left: 12px;
+            left: 0;
+            bottom: 0;
 
-            background: rgba(0,0,0,.65);
+            width: 100%;
 
-            padding: 5px 10px;
+            padding: 35px 16px 15px;
 
-            border-radius: 4px;
+            background:
+                linear-gradient(
+                    transparent,
+                    rgba(0,0,0,.9)
+                );
+        }
 
+        .photo-overlay h3 {
+            font-size: 17px;
+        }
+
+        .photo-overlay p {
+            color: #c4d0d4;
             font-size: 12px;
         }
 
-        /* =========================
+        .remove-photo {
+            position: absolute;
+
+            right: 10px;
+            top: 10px;
+
+            width: 34px;
+            height: 34px;
+
+            border: none;
+            border-radius: 50%;
+
+            background: rgba(0,0,0,.7);
+
+            color: white;
+
+            cursor: pointer;
+
+            z-index: 5;
+        }
+
+        /* ==============================
+           LIGHTBOX
+        ============================== */
+
+        .lightbox {
+            position: fixed;
+
+            inset: 0;
+
+            background: rgba(0,0,0,.9);
+
+            display: none;
+
+            justify-content: center;
+            align-items: center;
+
+            z-index: 3000;
+
+            padding: 30px;
+        }
+
+        .lightbox.active {
+            display: flex;
+        }
+
+        .lightbox img {
+            max-width: 95%;
+            max-height: 90vh;
+
+            width: auto;
+
+            border-radius: 8px;
+        }
+
+        .close-lightbox {
+            position: absolute;
+
+            top: 25px;
+            right: 30px;
+
+            border: none;
+            background: none;
+
+            color: white;
+
+            font-size: 40px;
+
+            cursor: pointer;
+        }
+
+        /* ==============================
            SERVICES
-        ========================= */
+        ============================== */
 
         .services {
             display: grid;
-            grid-template-columns: repeat(3,1fr);
-            gap: 23px;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 22px;
         }
 
         .service {
-            background: var(--card);
-
             padding: 30px;
 
-            border-radius: 11px;
+            background: var(--card);
+
+            border-radius: 10px;
 
             border: 1px solid rgba(255,255,255,.07);
 
@@ -598,13 +604,13 @@
         }
 
         .service:hover {
-            border-color: var(--blue);
             transform: translateY(-5px);
+            border-color: var(--blue);
         }
 
         .service-icon {
             font-size: 32px;
-            margin-bottom: 13px;
+            margin-bottom: 12px;
         }
 
         .service h3 {
@@ -616,9 +622,9 @@
             font-size: 14px;
         }
 
-        /* =========================
+        /* ==============================
            CONTACT
-        ========================= */
+        ============================== */
 
         .contact-grid {
             display: grid;
@@ -626,22 +632,22 @@
             gap: 60px;
         }
 
-        .contact-text h2 {
-            font-size: 40px;
-            line-height: 1.2;
-            margin: 12px 0 20px;
+        .contact-content h2 {
+            font-size: 42px;
+            line-height: 1.15;
+            margin-bottom: 20px;
         }
 
-        .contact-text p {
+        .contact-content p {
             color: var(--gray);
             margin-bottom: 25px;
         }
 
-        .contact-info {
+        .contact-item {
             margin: 15px 0;
         }
 
-        .contact-info strong {
+        .contact-item strong {
             color: var(--gold);
         }
 
@@ -656,11 +662,11 @@
 
             padding: 14px;
 
-            background: var(--navy);
-
-            color: white;
+            background: var(--navy2);
 
             border: 1px solid rgba(255,255,255,.1);
+
+            color: white;
 
             border-radius: 6px;
 
@@ -674,15 +680,19 @@
             resize: vertical;
         }
 
-        /* =========================
+        /* ==============================
            FOOTER
-        ========================= */
+        ============================== */
 
         footer {
-            background: #030b10;
             padding: 30px;
+
+            background: #030b10;
+
             text-align: center;
+
             color: var(--gray);
+
             font-size: 13px;
         }
 
@@ -690,11 +700,11 @@
             color: var(--gold);
         }
 
-        /* =========================
+        /* ==============================
            RESPONSIVE
-        ========================= */
+        ============================== */
 
-        @media(max-width:900px) {
+        @media(max-width: 900px) {
 
             .menu {
                 display: block;
@@ -725,7 +735,7 @@
 
             .stats-grid,
             .activity-grid {
-                grid-template-columns: repeat(2,1fr);
+                grid-template-columns: repeat(2, 1fr);
             }
 
             .about-grid,
@@ -733,14 +743,16 @@
                 grid-template-columns: 1fr;
             }
 
-            .articles,
-            .ebooks,
             .services {
-                grid-template-columns: repeat(2,1fr);
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .gallery {
+                grid-template-columns: repeat(2, 1fr);
             }
         }
 
-        @media(max-width:600px) {
+        @media(max-width: 600px) {
 
             .section {
                 padding: 65px 0;
@@ -763,28 +775,27 @@
             }
 
             .stats-grid,
-            .articles,
-            .ebooks,
             .activity-grid,
-            .services {
-                grid-template-columns: 1fr;
-            }
-
-            .about-photo {
-                height: 320px;
-            }
-
-            .ebook-tools {
-                flex-direction: column;
-            }
-
+            .services,
             .gallery {
                 grid-template-columns: 1fr;
-                grid-auto-rows: 250px;
             }
 
-            .gallery-item:first-child {
-                grid-row: auto;
+            .about-image {
+                min-height: 320px;
+            }
+
+            .gallery-controls {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .gallery-search {
+                max-width: none;
+            }
+
+            .upload-label {
+                width: 100%;
             }
         }
 
@@ -798,15 +809,14 @@
 ========================= -->
 
 <header>
+
     <div class="container">
 
         <nav>
 
             <a href="#home" class="logo">
 
-                <div class="logo-box">
-                    ✚
-                </div>
+                <div class="logo-box">✚</div>
 
                 FIELD<span>RESPONSE</span>
 
@@ -820,10 +830,9 @@
 
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#articles">Articles</a></li>
-                <li><a href="#ebooks">E-Books</a></li>
                 <li><a href="#activities">Activities</a></li>
                 <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#services">Services</a></li>
                 <li><a href="#contact">Contact</a></li>
 
             </ul>
@@ -831,6 +840,7 @@
         </nav>
 
     </div>
+
 </header>
 
 
@@ -845,28 +855,28 @@
         <div class="hero-content">
 
             <span class="badge">
-                Military Humanitarian Journal
+                Disaster Response & Humanitarian Assistance
             </span>
 
             <h1>
-                Prepared to Serve.<br>
-                <span>Ready to Respond.</span>
+                Documenting Service.<br>
+                <span>Sharing the Mission.</span>
             </h1>
 
             <p>
-                A digital journal dedicated to disaster response,
-                humanitarian assistance, leadership, preparedness,
-                community service and lessons learned.
+                A digital photo journal showcasing disaster response,
+                humanitarian assistance, training activities,
+                community support and leadership in action.
             </p>
 
             <div class="buttons">
 
-                <a href="#articles" class="btn primary">
-                    Read Articles
+                <a href="#gallery" class="btn primary">
+                    View Photo Gallery
                 </a>
 
-                <a href="#ebooks" class="btn outline">
-                    Explore E-Books
+                <a href="#activities" class="btn outline">
+                    Explore Activities
                 </a>
 
             </div>
@@ -879,7 +889,7 @@
 
 
 <!-- =========================
-     STATS
+     STATISTICS
 ========================= -->
 
 <section class="stats">
@@ -889,23 +899,23 @@
         <div class="stats-grid">
 
             <div class="stat">
-                <h2>100+</h2>
-                <p>Journal Articles</p>
+                <h2 id="photoCount">0</h2>
+                <p>Photos Documented</p>
             </div>
 
             <div class="stat">
-                <h2>50+</h2>
-                <p>Field Activities</p>
+                <h2>25+</h2>
+                <p>Activities</p>
             </div>
 
             <div class="stat">
-                <h2>30+</h2>
-                <p>E-Books</p>
+                <h2>10+</h2>
+                <p>Communities</p>
             </div>
 
             <div class="stat">
                 <h2>24/7</h2>
-                <p>Online Access</p>
+                <p>Digital Access</p>
             </div>
 
         </div>
@@ -925,56 +935,56 @@
 
         <div class="about-grid">
 
-            <div class="about-photo"></div>
+            <div class="about-image"></div>
 
             <div class="about-content">
 
                 <span class="badge">
-                    About Field Response
+                    About The Journal
                 </span>
 
                 <h2>
-                    Knowledge That Supports Service
+                    Every Activity Has a Story
                 </h2>
 
                 <p>
-                    FIELD RESPONSE is a digital journal created
-                    to promote learning and professional development
-                    in disaster response and humanitarian assistance.
+                    FIELD RESPONSE is a digital journal designed
+                    to document and showcase activities related to
+                    disaster response and humanitarian assistance.
                 </p>
 
                 <p>
-                    The journal brings together articles, educational
-                    resources, photographs and field activities that
-                    highlight preparedness, teamwork, leadership and
-                    service to affected communities.
+                    Through photographs and activity documentation,
+                    the website preserves important moments of
+                    teamwork, preparedness, service and community
+                    assistance.
                 </p>
 
-                <ul class="list">
+                <ul class="check-list">
 
                     <li>
-                        <strong>✓</strong>
-                        Disaster preparedness and response
+                        <span>✓</span>
+                        Disaster response documentation
                     </li>
 
                     <li>
-                        <strong>✓</strong>
-                        Humanitarian assistance
+                        <span>✓</span>
+                        Humanitarian assistance activities
                     </li>
 
                     <li>
-                        <strong>✓</strong>
-                        Military leadership development
+                        <span>✓</span>
+                        Training and preparedness
                     </li>
 
                     <li>
-                        <strong>✓</strong>
-                        Community resilience
+                        <span>✓</span>
+                        Community engagement
                     </li>
 
                     <li>
-                        <strong>✓</strong>
-                        Lessons learned and professional education
+                        <span>✓</span>
+                        Photo-based activity journal
                     </li>
 
                 </ul>
@@ -989,346 +999,27 @@
 
 
 <!-- =========================
-     ARTICLES
-========================= -->
-
-<section class="section dark-section" id="articles">
-
-    <div class="container">
-
-        <div class="section-title">
-
-            <small>FEATURED ARTICLES</small>
-
-            <h2>
-                Read. Learn. Reflect.
-            </h2>
-
-            <p>
-                Explore ideas and lessons that encourage
-                responsible leadership and humanitarian service.
-            </p>
-
-        </div>
-
-
-        <div class="articles">
-
-            <article class="article">
-
-                <img src="images/article1.jpg"
-                     alt="Disaster preparedness">
-
-                <div class="article-body">
-
-                    <span class="category">
-                        Preparedness
-                    </span>
-
-                    <h3>
-                        Preparing Before Disaster Strikes
-                    </h3>
-
-                    <p>
-                        Why planning, coordination and readiness
-                        are important parts of effective disaster response.
-                    </p>
-
-                    <a href="#" class="read">
-                        Read Article →
-                    </a>
-
-                </div>
-
-            </article>
-
-
-            <article class="article">
-
-                <img src="images/article2.jpg"
-                     alt="Humanitarian assistance">
-
-                <div class="article-body">
-
-                    <span class="category">
-                        Humanitarian
-                    </span>
-
-                    <h3>
-                        People at the Center of Assistance
-                    </h3>
-
-                    <p>
-                        Humanitarian action should protect dignity,
-                        safety and the needs of affected communities.
-                    </p>
-
-                    <a href="#" class="read">
-                        Read Article →
-                    </a>
-
-                </div>
-
-            </article>
-
-
-            <article class="article">
-
-                <img src="images/article3.jpg"
-                     alt="Military leadership">
-
-                <div class="article-body">
-
-                    <span class="category">
-                        Leadership
-                    </span>
-
-                    <h3>
-                        Leadership During Crisis
-                    </h3>
-
-                    <p>
-                        Good leadership requires communication,
-                        teamwork, adaptability and sound judgment.
-                    </p>
-
-                    <a href="#" class="read">
-                        Read Article →
-                    </a>
-
-                </div>
-
-            </article>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- =========================
-     E-BOOKS
-========================= -->
-
-<section class="section" id="ebooks">
-
-    <div class="container">
-
-        <div class="section-title">
-
-            <small>DIGITAL LIBRARY</small>
-
-            <h2>
-                E-Books & Learning Resources
-            </h2>
-
-            <p>
-                Access educational materials covering disaster
-                response, humanitarian assistance and leadership.
-            </p>
-
-        </div>
-
-
-        <div class="ebook-tools">
-
-            <input
-                type="text"
-                id="search"
-                placeholder="Search e-books..."
-            >
-
-            <button
-                class="btn primary"
-                onclick="searchBooks()">
-
-                Search
-
-            </button>
-
-        </div>
-
-
-        <div class="ebooks" id="ebookList">
-
-
-            <article class="book">
-
-                <img
-                    src="images/book1.jpg"
-                    class="book-cover"
-                    alt="Disaster Response">
-
-                <div class="book-content">
-
-                    <span class="category">
-                        Disaster Response
-                    </span>
-
-                    <h3>
-                        Disaster Response Fundamentals
-                    </h3>
-
-                    <p>
-                        A learning resource about preparedness,
-                        response and recovery.
-                    </p>
-
-                    <div class="book-buttons">
-
-                        <a
-                            href="books/disaster-response.pdf"
-                            target="_blank"
-                            class="book-btn">
-
-                            Read
-
-                        </a>
-
-                        <a
-                            href="books/disaster-response.pdf"
-                            download
-                            class="book-btn download">
-
-                            Download
-
-                        </a>
-
-                    </div>
-
-                </div>
-
-            </article>
-
-
-            <article class="book">
-
-                <img
-                    src="images/book2.jpg"
-                    class="book-cover"
-                    alt="Military Leadership">
-
-                <div class="book-content">
-
-                    <span class="category">
-                        Leadership
-                    </span>
-
-                    <h3>
-                        Leadership in Emergency Situations
-                    </h3>
-
-                    <p>
-                        Educational material about communication,
-                        teamwork and responsible leadership.
-                    </p>
-
-                    <div class="book-buttons">
-
-                        <a
-                            href="books/leadership.pdf"
-                            target="_blank"
-                            class="book-btn">
-
-                            Read
-
-                        </a>
-
-                        <a
-                            href="books/leadership.pdf"
-                            download
-                            class="book-btn download">
-
-                            Download
-
-                        </a>
-
-                    </div>
-
-                </div>
-
-            </article>
-
-
-            <article class="book">
-
-                <img
-                    src="images/book3.jpg"
-                    class="book-cover"
-                    alt="Humanitarian Assistance">
-
-                <div class="book-content">
-
-                    <span class="category">
-                        Humanitarian
-                    </span>
-
-                    <h3>
-                        Humanitarian Assistance Guide
-                    </h3>
-
-                    <p>
-                        A reference for understanding humanitarian
-                        principles and community assistance.
-                    </p>
-
-                    <div class="book-buttons">
-
-                        <a
-                            href="books/humanitarian.pdf"
-                            target="_blank"
-                            class="book-btn">
-
-                            Read
-
-                        </a>
-
-                        <a
-                            href="books/humanitarian.pdf"
-                            download
-                            class="book-btn download">
-
-                            Download
-
-                        </a>
-
-                    </div>
-
-                </div>
-
-            </article>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- =========================
      ACTIVITIES
 ========================= -->
 
-<section class="section dark-section" id="activities">
+<section class="section dark" id="activities">
 
     <div class="container">
 
         <div class="section-title">
 
-            <small>FIELD ACTIVITIES</small>
+            <small>ACTIVITIES</small>
 
             <h2>
                 Service in Action
             </h2>
 
             <p>
-                Documenting activities that demonstrate preparedness,
-                teamwork, humanitarian assistance and community support.
+                Explore the different activities documented
+                through the FIELD RESPONSE journal.
             </p>
 
         </div>
-
 
         <div class="activity-grid">
 
@@ -1339,24 +1030,24 @@
                 <h3>Emergency Response</h3>
 
                 <p>
-                    Disaster response and emergency preparedness activities.
+                    Response activities during emergencies
+                    and disaster situations.
                 </p>
 
             </div>
-
 
             <div class="activity">
 
                 <div class="activity-icon">🤝</div>
 
-                <h3>Community Assistance</h3>
+                <h3>Humanitarian Assistance</h3>
 
                 <p>
-                    Activities supporting communities affected by disasters.
+                    Activities supporting affected communities
+                    and families.
                 </p>
 
             </div>
-
 
             <div class="activity">
 
@@ -1365,11 +1056,11 @@
                 <h3>Training</h3>
 
                 <p>
-                    Education and preparedness activities for responders.
+                    Preparedness exercises, education and
+                    capability development.
                 </p>
 
             </div>
-
 
             <div class="activity">
 
@@ -1378,24 +1069,24 @@
                 <h3>Relief Operations</h3>
 
                 <p>
-                    Humanitarian support and relief distribution activities.
+                    Relief and assistance activities supporting
+                    communities in need.
                 </p>
 
             </div>
-
 
             <div class="activity">
 
                 <div class="activity-icon">🩺</div>
 
-                <h3>Medical Assistance</h3>
+                <h3>Medical Support</h3>
 
                 <p>
-                    Humanitarian health and community support activities.
+                    Community health and humanitarian
+                    assistance activities.
                 </p>
 
             </div>
-
 
             <div class="activity">
 
@@ -1404,11 +1095,11 @@
                 <h3>Coordination</h3>
 
                 <p>
-                    Communication and coordination during emergencies.
+                    Coordination and communication during
+                    disaster response operations.
                 </p>
 
             </div>
-
 
             <div class="activity">
 
@@ -1417,11 +1108,11 @@
                 <h3>Recovery</h3>
 
                 <p>
-                    Supporting resilience and community recovery.
+                    Activities supporting community recovery
+                    and resilience.
                 </p>
 
             </div>
-
 
             <div class="activity">
 
@@ -1430,7 +1121,8 @@
                 <h3>Leadership</h3>
 
                 <p>
-                    Developing responsible and resilient leaders.
+                    Leadership and teamwork during humanitarian
+                    activities.
                 </p>
 
             </div>
@@ -1443,7 +1135,7 @@
 
 
 <!-- =========================
-     GALLERY
+     PHOTO GALLERY
 ========================= -->
 
 <section class="section" id="gallery">
@@ -1455,74 +1147,171 @@
             <small>PHOTO JOURNAL</small>
 
             <h2>
-                Activities in Pictures
+                Activities Gallery
             </h2>
 
             <p>
-                A visual record of humanitarian assistance,
-                training, preparedness and community activities.
+                View and upload photographs documenting
+                disaster response and humanitarian activities.
             </p>
 
         </div>
 
 
-        <div class="gallery">
+        <!-- SEARCH + UPLOAD -->
 
-            <div class="gallery-item">
+        <div class="gallery-controls">
 
-                <img src="images/gallery1.jpg"
-                     alt="Disaster response activity">
+            <input
+                type="text"
+                class="gallery-search"
+                id="gallerySearch"
+                placeholder="Search photos..."
+            >
 
-                <div class="caption">
-                    Disaster Response
+            <label
+                for="photoUpload"
+                class="upload-label">
+
+                📷 Upload Photos
+
+            </label>
+
+            <input
+                type="file"
+                id="photoUpload"
+                accept="image/*"
+                multiple>
+
+        </div>
+
+
+        <!-- GALLERY -->
+
+        <div class="gallery" id="galleryContainer">
+
+
+            <div class="photo-card">
+
+                <img
+                    src="images/gallery1.jpg"
+                    alt="Emergency Response">
+
+                <div class="photo-overlay">
+
+                    <h3>
+                        Emergency Response
+                    </h3>
+
+                    <p>
+                        Field activity documentation
+                    </p>
+
                 </div>
 
             </div>
 
 
-            <div class="gallery-item">
+            <div class="photo-card">
 
-                <img src="images/gallery2.jpg"
-                     alt="Humanitarian assistance">
+                <img
+                    src="images/gallery2.jpg"
+                    alt="Humanitarian Assistance">
 
-                <div class="caption">
-                    Humanitarian Aid
+                <div class="photo-overlay">
+
+                    <h3>
+                        Humanitarian Assistance
+                    </h3>
+
+                    <p>
+                        Community support activity
+                    </p>
+
                 </div>
 
             </div>
 
 
-            <div class="gallery-item">
+            <div class="photo-card">
 
-                <img src="images/gallery3.jpg"
-                     alt="Training activity">
+                <img
+                    src="images/gallery3.jpg"
+                    alt="Training">
 
-                <div class="caption">
-                    Training
+                <div class="photo-overlay">
+
+                    <h3>
+                        Disaster Preparedness
+                    </h3>
+
+                    <p>
+                        Training and readiness
+                    </p>
+
                 </div>
 
             </div>
 
 
-            <div class="gallery-item">
+            <div class="photo-card">
 
-                <img src="images/gallery4.jpg"
-                     alt="Community activity">
+                <img
+                    src="images/gallery4.jpg"
+                    alt="Community Support">
 
-                <div class="caption">
-                    Community Support
+                <div class="photo-overlay">
+
+                    <h3>
+                        Community Support
+                    </h3>
+
+                    <p>
+                        Humanitarian assistance
+                    </p>
+
                 </div>
 
             </div>
 
 
-            <div class="gallery-item">
+            <div class="photo-card">
 
-                <img src="images/gallery5.jpg"
-                     alt="Preparedness">
+                <img
+                    src="images/gallery5.jpg"
+                    alt="Relief Operations">
 
-                <div class="caption">
-                    Preparedness
+                <div class="photo-overlay">
+
+                    <h3>
+                        Relief Operations
+                    </h3>
+
+                    <p>
+                        Relief activity documentation
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="photo-card">
+
+                <img
+                    src="images/gallery6.jpg"
+                    alt="Team Activity">
+
+                <div class="photo-overlay">
+
+                    <h3>
+                        Teamwork
+                    </h3>
+
+                    <p>
+                        Working together to serve
+                    </p>
+
                 </div>
 
             </div>
@@ -1538,16 +1327,16 @@
      SERVICES
 ========================= -->
 
-<section class="section dark-section">
+<section class="section dark" id="services">
 
     <div class="container">
 
         <div class="section-title">
 
-            <small>JOURNAL TOPICS</small>
+            <small>WHAT WE DOCUMENT</small>
 
             <h2>
-                What You Can Explore
+                Journal Services
             </h2>
 
         </div>
@@ -1557,79 +1346,17 @@
 
             <div class="service">
 
-                <div class="service-icon">🚨</div>
-
-                <h3>
-                    Disaster Response
-                </h3>
-
-                <p>
-                    Articles and resources about emergency
-                    preparedness, response and recovery.
-                </p>
-
-            </div>
-
-
-            <div class="service">
-
-                <div class="service-icon">🤝</div>
-
-                <h3>
-                    Humanitarian Assistance
-                </h3>
-
-                <p>
-                    Resources focused on humanitarian service,
-                    community support and responsible assistance.
-                </p>
-
-            </div>
-
-
-            <div class="service">
-
-                <div class="service-icon">🧭</div>
-
-                <h3>
-                    Military Leadership
-                </h3>
-
-                <p>
-                    Leadership development, teamwork,
-                    communication and decision-making.
-                </p>
-
-            </div>
-
-
-            <div class="service">
-
-                <div class="service-icon">📚</div>
-
-                <h3>
-                    Digital Library
-                </h3>
-
-                <p>
-                    E-books, guides and educational materials
-                    for professional development.
-                </p>
-
-            </div>
-
-
-            <div class="service">
-
-                <div class="service-icon">📸</div>
+                <div class="service-icon">
+                    📸
+                </div>
 
                 <h3>
                     Photo Documentation
                 </h3>
 
                 <p>
-                    Visual stories documenting activities,
-                    training and humanitarian service.
+                    Organize and showcase photographs from
+                    disaster response and humanitarian activities.
                 </p>
 
             </div>
@@ -1637,15 +1364,89 @@
 
             <div class="service">
 
-                <div class="service-icon">🧠</div>
+                <div class="service-icon">
+                    📁
+                </div>
 
                 <h3>
-                    Lessons Learned
+                    Activity Archives
                 </h3>
 
                 <p>
-                    Reflections designed to encourage learning,
-                    critical thinking and continuous improvement.
+                    Preserve important activity photographs
+                    and descriptions in a digital archive.
+                </p>
+
+            </div>
+
+
+            <div class="service">
+
+                <div class="service-icon">
+                    📝
+                </div>
+
+                <h3>
+                    Activity Reports
+                </h3>
+
+                <p>
+                    Present photographs together with useful
+                    information about each activity.
+                </p>
+
+            </div>
+
+
+            <div class="service">
+
+                <div class="service-icon">
+                    🖼️
+                </div>
+
+                <h3>
+                    Digital Gallery
+                </h3>
+
+                <p>
+                    Easily browse photographs through a
+                    responsive online gallery.
+                </p>
+
+            </div>
+
+
+            <div class="service">
+
+                <div class="service-icon">
+                    🔎
+                </div>
+
+                <h3>
+                    Photo Search
+                </h3>
+
+                <p>
+                    Quickly find photographs by activity,
+                    category or description.
+                </p>
+
+            </div>
+
+
+            <div class="service">
+
+                <div class="service-icon">
+                    📱
+                </div>
+
+                <h3>
+                    Mobile Access
+                </h3>
+
+                <p>
+                    Access the journal and photo gallery
+                    from phones, tablets and computers.
                 </p>
 
             </div>
@@ -1667,35 +1468,36 @@
 
         <div class="contact-grid">
 
-            <div class="contact-text">
+            <div class="contact-content">
 
                 <span class="badge">
                     CONTACT
                 </span>
 
                 <h2>
-                    Share a Story
+                    Have an Activity to Share?
                 </h2>
 
                 <p>
-                    Have an article, activity, photograph or
-                    educational resource that could contribute
-                    to the journal? Send us a message.
+                    Send us information about an activity,
+                    photo documentation or humanitarian
+                    project that you would like to feature.
                 </p>
 
-                <div class="contact-info">
+                <div class="contact-item">
+
                     <strong>Email</strong><br>
+
                     fieldresponse@example.com
+
                 </div>
 
-                <div class="contact-info">
+                <div class="contact-item">
+
                     <strong>Journal</strong><br>
-                    Disaster Response & Humanitarian Assistance
-                </div>
 
-                <div class="contact-info">
-                    <strong>Access</strong><br>
-                    Digital Journal — Available 24/7
+                    Disaster Response & Humanitarian Assistance
+
                 </div>
 
             </div>
@@ -1715,16 +1517,16 @@
 
                 <input
                     type="text"
-                    placeholder="Subject"
+                    placeholder="Activity / Subject"
                     required>
 
                 <textarea
-                    placeholder="Write your message..."
+                    placeholder="Tell us about the activity..."
                     required></textarea>
 
                 <button
-                    class="btn primary"
-                    type="submit">
+                    type="submit"
+                    class="btn primary">
 
                     Send Message
 
@@ -1740,18 +1542,41 @@
 
 
 <!-- =========================
+     LIGHTBOX
+========================= -->
+
+<div class="lightbox" id="lightbox">
+
+    <button
+        class="close-lightbox"
+        id="closeLightbox">
+
+        ×
+
+    </button>
+
+    <img
+        id="lightboxImage"
+        src=""
+        alt="Large photo">
+
+</div>
+
+
+<!-- =========================
      FOOTER
 ========================= -->
 
 <footer>
 
     <p>
-        © 2026 <strong>FIELD RESPONSE</strong>
+        © 2026
+        <strong>FIELD RESPONSE</strong>
         — Disaster Response & Humanitarian Assistance Journal
     </p>
 
     <p>
-        Prepare • Respond • Serve • Learn
+        Document • Serve • Learn • Remember
     </p>
 
 </footer>
@@ -1759,9 +1584,9 @@
 
 <script>
 
-    /* =========================
+    /* =====================================
        MOBILE MENU
-    ========================= */
+    ===================================== */
 
     const menu =
         document.getElementById("menu");
@@ -1789,63 +1614,286 @@
         });
 
 
-    /* =========================
-       E-BOOK SEARCH
-    ========================= */
+    /* =====================================
+       PHOTO UPLOAD
+    ===================================== */
 
-    const search =
-        document.getElementById("search");
+    const photoUpload =
+        document.getElementById("photoUpload");
 
-    function searchBooks() {
+    const galleryContainer =
+        document.getElementById("galleryContainer");
 
-        const value =
-            search.value.toLowerCase();
+    const photoCount =
+        document.getElementById("photoCount");
 
-        const books =
-            document.querySelectorAll(".book");
 
-        books.forEach(book => {
+    function updatePhotoCount() {
 
-            const text =
-                book.innerText.toLowerCase();
+        const photos =
+            galleryContainer.querySelectorAll(
+                ".photo-card"
+            );
 
-            if (text.includes(value)) {
-
-                book.style.display = "";
-
-            } else {
-
-                book.style.display = "none";
-
-            }
-
-        });
+        photoCount.textContent = photos.length;
 
     }
 
-    search.addEventListener(
-        "keyup",
-        searchBooks
+
+    photoUpload.addEventListener(
+        "change",
+        function () {
+
+            const files = Array.from(this.files);
+
+            files.forEach(file => {
+
+                if (!file.type.startsWith("image/")) {
+                    return;
+                }
+
+                const reader = new FileReader();
+
+                reader.onload = function (event) {
+
+                    const card =
+                        document.createElement("div");
+
+                    card.className = "photo-card";
+
+                    card.innerHTML = `
+
+                        <img
+                            src="${event.target.result}"
+                            alt="${file.name}">
+
+                        <button
+                            class="remove-photo"
+                            title="Remove photo">
+
+                            ×
+
+                        </button>
+
+                        <div class="photo-overlay">
+
+                            <h3>
+                                Uploaded Activity
+                            </h3>
+
+                            <p>
+                                ${file.name}
+                            </p>
+
+                        </div>
+
+                    `;
+
+                    galleryContainer.prepend(card);
+
+                    updatePhotoCount();
+
+                };
+
+                reader.readAsDataURL(file);
+
+            });
+
+            this.value = "";
+
+        }
     );
 
 
-    /* =========================
+    /* =====================================
+       REMOVE UPLOADED PHOTO
+    ===================================== */
+
+    galleryContainer.addEventListener(
+        "click",
+        function (event) {
+
+            if (
+                event.target.classList.contains(
+                    "remove-photo"
+                )
+            ) {
+
+                event.stopPropagation();
+
+                event.target
+                    .closest(".photo-card")
+                    .remove();
+
+                updatePhotoCount();
+
+            }
+
+        }
+    );
+
+
+    /* =====================================
+       PHOTO SEARCH
+    ===================================== */
+
+    const gallerySearch =
+        document.getElementById("gallerySearch");
+
+
+    gallerySearch.addEventListener(
+        "input",
+        function () {
+
+            const search =
+                this.value.toLowerCase();
+
+            const photos =
+                galleryContainer.querySelectorAll(
+                    ".photo-card"
+                );
+
+            photos.forEach(photo => {
+
+                const text =
+                    photo.innerText.toLowerCase();
+
+                const image =
+                    photo.querySelector("img");
+
+                const alt =
+                    image
+                        ? image.alt.toLowerCase()
+                        : "";
+
+                if (
+                    text.includes(search) ||
+                    alt.includes(search)
+                ) {
+
+                    photo.style.display = "";
+
+                } else {
+
+                    photo.style.display = "none";
+
+                }
+
+            });
+
+        }
+    );
+
+
+    /* =====================================
+       LIGHTBOX
+    ===================================== */
+
+    const lightbox =
+        document.getElementById("lightbox");
+
+    const lightboxImage =
+        document.getElementById("lightboxImage");
+
+    const closeLightbox =
+        document.getElementById("closeLightbox");
+
+
+    galleryContainer.addEventListener(
+        "click",
+        function (event) {
+
+            if (
+                event.target.classList.contains(
+                    "remove-photo"
+                )
+            ) {
+                return;
+            }
+
+            const image =
+                event.target.closest(".photo-card")
+                    ?.querySelector("img");
+
+            if (!image) {
+                return;
+            }
+
+            lightboxImage.src = image.src;
+
+            lightbox.classList.add("active");
+
+        }
+    );
+
+
+    closeLightbox.addEventListener(
+        "click",
+        () => {
+
+            lightbox.classList.remove("active");
+
+        }
+    );
+
+
+    lightbox.addEventListener(
+        "click",
+        event => {
+
+            if (event.target === lightbox) {
+
+                lightbox.classList.remove("active");
+
+            }
+
+        }
+    );
+
+
+    /* =====================================
+       ESCAPE KEY
+    ===================================== */
+
+    document.addEventListener(
+        "keydown",
+        event => {
+
+            if (event.key === "Escape") {
+
+                lightbox.classList.remove("active");
+
+            }
+
+        }
+    );
+
+
+    /* =====================================
        CONTACT FORM
-    ========================= */
+    ===================================== */
 
     document
         .getElementById("contactForm")
-        .addEventListener("submit", function(e) {
+        .addEventListener(
+            "submit",
+            function (event) {
 
-            e.preventDefault();
+                event.preventDefault();
 
-            alert(
-                "Thank you! Your message has been submitted."
-            );
+                alert(
+                    "Thank you! Your activity submission has been received."
+                );
 
-            this.reset();
+                this.reset();
 
-        });
+            }
+        );
+
+
+    /* INITIAL PHOTO COUNT */
+
+    updatePhotoCount();
 
 </script>
 
